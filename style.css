@@ -1,0 +1,139 @@
+  
+  .header__title {
+    margin: 0;
+    padding-top:20px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7e7e82;
+    background-image: linear-gradient(to right,#F8F8F8,white);
+    text-transform: uppercase;
+    box-sizing: border-box;
+  }
+  
+  .card__container {
+    margin-left: 16px;
+    margin-top: 16px;
+    padding-left: 24px;
+    background-color: #F8F8F8;
+  }
+  
+  .cards-list {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    left: -27px;
+    top: -4px;
+  }
+  
+  .card__item {
+    flex-basis: 240px;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 8px;
+  }
+  
+  .card__item:first-of-type {
+    margin-left: 0;
+  }
+  
+  .card__link {
+    display: inline-block;
+    width: 100%;
+    height: 72px;
+    transition: opacity 0.3s;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+
+  
+  
+  
+
+  
+  .change__btn {
+    border: none;
+    margin-bottom: 10px;
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    background-color: #F8F8F8;
+  }
+  
+
+  
+  .show {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .revert::before {
+      content: "";
+      transform: rotate(180deg);
+    }
+  
+    .change__btn {
+      display: flex;
+      width: 133px;
+    }
+  
+    .header__title {
+      width: 100%;
+    }
+  
+    .card__item {
+      flex-basis: 222px;
+      margin: 0;
+    }
+  
+    .card__link {
+      width: 222px;
+    }
+  
+    .cards-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 26px;
+      position: static;
+      max-width: 768px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  @media screen and (min-width: 1120px) {
+  
+    .card__item:nth-child(7),
+    .card__item:nth-child(8) {
+      display: block;
+    }
+  
+    .card__item {
+      flex-basis: 240px;
+      margin: 0;
+    }
+  
+    .card__link {
+      width: 100%;
+    }
+  
+    .cards-list {
+      gap: 16px 32px;
+  
+      min-width: 1120px;
+    }
+  
+    .card__container {
+      margin-top: 16px;
+    }
+  }
+  

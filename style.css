@@ -1,4 +1,8 @@
-  
+  body {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-rught: auto;
+  }
   .header__title {
     margin: 0;
     padding-top:20px;

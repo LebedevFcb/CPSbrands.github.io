@@ -63,7 +63,7 @@
 
 .lenovo {
   background-image: url("img/Lenovo.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
@@ -71,56 +71,56 @@
   
 .samsung {
   background-image: url("img/Samsung.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
 
 .apple {
   background-image: url("img/Apple.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
 
 .viewSonic {
   background-image: url("img/ViewSonic.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
 
 .bosch {
   background-image: url("img/Bocsh.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
 
 .hp {
   background-image: url("img/HP.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
 
 .acer {
   background-image: url("img/Acer.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
 
 .acer {
   background-image: url("img/Acer.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }
 
 .sony {
   background-image: url("img/Sony.png"), url("img/go.svg");
-  background-position: 16px, 160px;
+  background-position: 16px, 170px;
   background-repeat: no-repeat;
   background-color: white;
 }

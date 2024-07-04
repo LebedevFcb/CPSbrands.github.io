@@ -14,7 +14,7 @@
     background-image: linear-gradient(to right,#F8F8F8,white);
     text-transform: uppercase;
     box-sizing: border-box;
-    border-top: 1px solid: #D9FFF5;
+   
   }
   
   .card__container {
@@ -22,6 +22,7 @@
     margin-top: 16px;
     padding-left: 24px;
     background-color: #F8F8F8;
+    border-top: 1px solid: #D9FFF5;
   }
   
   .cards-list {

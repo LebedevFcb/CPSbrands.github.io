@@ -4,35 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardItems = cardContainer.querySelectorAll('.card__item')
   const icon = showBtn.querySelector('.icon') // Иконка кнопки
 
-  // Начальное скрытие карточек с индексом от 6 и выше
-  for (let i = 6; i < cardItems.length; i++) {
-    cardItems[i].classList.add('hidden')
-  }
+for (let i = 6; i < cardItem.length; i++) {
+  cardItem[i].classList.remove("hidden");
+  toggleBtn(cardItem[i]);
+}
 
-  // Обработка клика на кнопку
-  showBtn.addEventListener('click', function () {
-    const hiddenItems = cardContainer.querySelectorAll('.card__item.hidden')
-
-    if (hiddenItems.length > 0) {
-      // Если есть скрытые карточки, показываем их
-      hiddenItems.forEach((item) => {
-        item.classList.remove('hidden')
-      })
-      showBtn.textContent = 'Скрыть'
-      showBtn.classList.add('revert')
-      icon.style.transform = 'rotate(0deg)' // Сбрасываем вращение
+function toggleBtn(item) {
+  showBtn.addEventListener("click", function () {
+    if (item.classList.contains("hidden")) {
+      showBtn.textContent = "Скрыть";
+      showBtn.classList.add("revert");
+      item.classList.remove("hidden");
     } else {
-      // Если все карточки показаны, скрываем карточки с индексом от 6 и выше
-      for (let i = 6; i < cardItems.length; i++) {
-        cardItems[i].classList.add('hidden')
-      }
-      showBtn.textContent = 'Показать все'
-      showBtn.classList.remove('revert')
-      icon.style.transform = 'rotate(180deg)' // Вращаем иконку обратно
+      showBtn.textContent = "Показать все";
+      showBtn.classList.remove("revert");
+      item.classList.add("hidden");
     }
-  })
-})
-
+  });
+}
 
 
 

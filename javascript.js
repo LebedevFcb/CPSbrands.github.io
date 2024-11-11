@@ -1,27 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const showBtn = document.querySelector('.change__btn')
-  const cardContainer = document.querySelector('.card__container')
-  const cardItems = cardContainer.querySelectorAll('.card__item')
-  const icon = showBtn.querySelector('.icon') // Иконка кнопки
+  const showBtn = document.querySelector('.change__btn');
+  const cardContainer = document.querySelector('.card__container');
+  const cardItems = cardContainer.querySelectorAll('.card__item');
+  const icon = showBtn.querySelector('.icon'); // Иконка кнопки
 
-for (let i = 6; i < cardItem.length; i++) {
-  cardItem[i].classList.remove("hidden");
-  toggleBtn(cardItem[i]);
-}
+  // Скрываем элементы начиная с 6-го
+  for (let i = 6; i < cardItems.length; i++) {
+    cardItems[i].classList.add("hidden");
+  }
 
-function toggleBtn(item) {
+  // Обработчик события для кнопки
   showBtn.addEventListener("click", function () {
-    if (item.classList.contains("hidden")) {
-      showBtn.textContent = "Скрыть";
-      showBtn.classList.add("revert");
-      item.classList.remove("hidden");
-    } else {
+    // Переключаем видимость элементов
+    for (let i = 6; i < cardItems.length; i++) {
+      cardItems[i].classList.toggle("hidden");
+    }
+    
+    // Обновляем текст и поворачиваем иконку
+    if (cardItems[6].classList.contains("hidden")) {
       showBtn.textContent = "Показать все";
       showBtn.classList.remove("revert");
-      item.classList.add("hidden");
+      icon.style.transform = "rotate(0deg)";
+    } else {
+      showBtn.textContent = "Скрыть";
+      showBtn.classList.add("revert");
+      icon.style.transform = "rotate(180deg)";
     }
   });
-}
+});
 
 
 

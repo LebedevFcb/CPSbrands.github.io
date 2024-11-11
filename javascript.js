@@ -5,7 +5,7 @@ const cardItem = cardContainer.querySelectorAll(".card__item");
 // Переключение класса hidden для всех элементов начиная с 6-го
 function toggleHiddenItems() {
   for (let i = 6; i < cardItem.length; i++) {
-    cardItem[i].classList.toggle("hidden");
+    cardItem[i].classList.add("hidden");
   }
 }
 
